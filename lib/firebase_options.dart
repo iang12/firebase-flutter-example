@@ -49,20 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
+  //adicione suas chaves geradas aqui
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA-qHmCYF071xofUG9wW4HPFGoInlgJ1AU',
-    appId: '1:436459308482:android:e6047520c30348abab025b',
-    messagingSenderId: '436459308482',
-    projectId: 'flutter-firebase-app-1addf',
-    storageBucket: 'flutter-firebase-app-1addf.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCTKcMo7gcypG2V6N_KxcWke0oRruqxiPA',
-    appId: '1:436459308482:ios:6bfd965b731cfa06ab025b',
-    messagingSenderId: '436459308482',
-    projectId: 'flutter-firebase-app-1addf',
-    storageBucket: 'flutter-firebase-app-1addf.appspot.com',
-    iosBundleId: 'com.labs.flutterfirebaseapp',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 }
