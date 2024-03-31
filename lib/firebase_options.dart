@@ -49,7 +49,8 @@ class DefaultFirebaseOptions {
     }
   }
 
-  //adicione suas chaves geradas aqui
+  //adicione suas chaves do firebase geradas na configuração aqui
+  //adicione o google-services.json na pasta android/app
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: '',
     appId: '',
@@ -57,7 +58,8 @@ class DefaultFirebaseOptions {
     projectId: '',
     storageBucket: '',
   );
-
+  //adicione suas chaves do firebase geradas na configuração aqui
+  //adicione o GoogleService-Info.plist na pasta runner do IOS
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: '',
     appId: '',
