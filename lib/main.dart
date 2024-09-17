@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfirebaseapp/pages/controller/todo_controller.dart';
+import 'package:flutterfirebaseapp/service/crashlytics_service.dart';
 import 'package:flutterfirebaseapp/service/firestore_service.dart';
 import 'package:provider/provider.dart';
 
@@ -10,10 +11,13 @@ import 'pages/controller/loading_provider.dart';
 import 'pages/home_page.dart';
 
 void main() async {
+  // Garante a inicialização dos serviços Flutter
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  // Inicializa o Firebase Crashlytics
+  await CrashlytcsService.initializeFlutterFire();
+
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
