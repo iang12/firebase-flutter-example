@@ -1,3 +1,4 @@
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -27,6 +28,12 @@ class NoTasksWidget extends StatelessWidget {
             'You don\'t have any active tasks right\nnow. Try to add some!',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 16, color: Colors.grey.shade600),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              FirebaseCrashlytics.instance.crash();
+            },
+            child: const Text('Gerar falha'),
           )
         ],
       ),

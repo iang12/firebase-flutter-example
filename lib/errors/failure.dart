@@ -34,3 +34,7 @@ class UnknownError extends Failure {
               'Unknown Error', // Passa a mensagem diretamente para a classe base
         );
 }
+
+class AnalyticsException {
+  AnalyticsException(String? message);
+}

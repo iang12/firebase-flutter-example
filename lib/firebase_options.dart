@@ -52,11 +52,11 @@ class DefaultFirebaseOptions {
   //adicione suas chaves do firebase geradas na configuração aqui
   //adicione o google-services.json na pasta android/app
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: '',
-    appId: '',
-    messagingSenderId: '',
-    projectId: '',
-    storageBucket: '',
+    apiKey: 'AIzaSyA-qHmCYF071xofUG9wW4HPFGoInlgJ1AU',
+    appId: 'com.labs.flutterfirebaseapp',
+    messagingSenderId: '1:436459308482:android:e6047520c30348abab025',
+    projectId: 'flutter-firebase-app-1addf',
+    storageBucket: 'flutter-firebase-app-1addf.appspot.com',
   );
   //adicione suas chaves do firebase geradas na configuração aqui
   //adicione o GoogleService-Info.plist na pasta runner do IOS
