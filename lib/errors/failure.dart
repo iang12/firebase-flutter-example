@@ -35,6 +35,20 @@ class UnknownError extends Failure {
         );
 }
 
+class ErrorSaveTodo extends Failure {
+  ErrorSaveTodo({
+    String? label,
+    dynamic exception,
+    StackTrace? stackTrace,
+  }) : super(
+          stackTrace: stackTrace,
+          label: label,
+          exception: exception,
+          errorMessage:
+              'ErrorSaveTodo', // Passa a mensagem diretamente para a classe base
+        );
+}
+
 class AnalyticsException {
   AnalyticsException(String? message);
 }
