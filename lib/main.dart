@@ -28,7 +28,7 @@ void main() async {
     // Inicializa o Firebase Crashlytics
     await CrashlytcsService.initializeFlutterFire();
 
-    final exaAnalyticsService = CustomAnalyticsService();
+    final analyticsService = CustomAnalyticsService();
     // Inicializa o Sentry
     final sentryService = getIt<SentryService>();
     //add your key here
@@ -38,7 +38,7 @@ void main() async {
       ),
     );
     // Inicializa o Firebase Analytics
-    exaAnalyticsService.initAnalytics();
+    analyticsService.initAnalytics();
     runApp(
       MaterialApp(
         navigatorObservers: [
